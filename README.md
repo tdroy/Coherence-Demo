@@ -10,11 +10,11 @@ There are two coherence configuration files.
 2) tangosol-coherence-override.xml : For cache cluster configuration, like multicast port and reference example-config.xml file.
 
 The com.tangosol.net.CacheFactory is used to get the current cache factory. Using the factory we can fetch the Cache instance.
-
+```
 CacheFactory.ensureCluster();
 NamedCache cache = CacheFactory.getCache("state-example");
 .....
 cache.put("key", stateNames);
 .....
 cache.get("key");
-
+```
